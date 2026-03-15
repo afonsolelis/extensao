@@ -582,28 +582,30 @@ input:focus, select:focus, textarea:focus {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 32px;
 }
 
 .project-card {
   background: var(--surface);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   border: 1px solid var(--line);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow-sm);
+  height: 100%;
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
   border-color: var(--brand);
 }
 
 .project-art {
-  height: 200px;
+  height: 240px;
   background-size: cover;
   background-position: center;
 }
@@ -619,7 +621,7 @@ input:focus, select:focus, textarea:focus {
 .art-civil { background: linear-gradient(135deg, rgba(234, 88, 12, 0.15), rgba(15, 23, 42, 0.6)), url("https://images.unsplash.com/photo-1503387762-592dea58ef23?auto=format&fit=crop&w=1200&q=80"); }
 
 .project-body {
-  padding: 24px;
+  padding: 32px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -629,16 +631,17 @@ input:focus, select:focus, textarea:focus {
   font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 4px 8px;
+  padding: 6px 12px;
   background: var(--surface-alt);
-  border-radius: 4px;
+  border-radius: var(--radius-pill);
   color: var(--muted);
+  border: 1px solid var(--line);
 }
 
 .project-meta {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: 24px;
   margin-top: auto;
   padding-top: 24px;
   border-top: 1px solid var(--line);
@@ -648,10 +651,15 @@ input:focus, select:focus, textarea:focus {
   display: block;
   font-size: 0.75rem;
   color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
 }
 
 .project-meta div strong {
-  font-size: 0.9375rem;
+  font-size: 1rem;
+  color: var(--primary);
+  font-weight: 700;
 }
 
 .project-card.is-hidden {
