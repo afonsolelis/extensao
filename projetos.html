@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos | Extensão</title>
+  <meta
+    name="description"
+    content="Explore projetos e chamadas de extensão universitária por tema, formato e perfil de participação."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="site-frame">
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="Página inicial da Extensão">
+        <span class="brand-mark">Ex</span>
+        <span class="brand-copy">
+          <strong>Extensão</strong>
+          <small>marketplace de projetos universitários</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a href="./index.html">Início</a>
+        <a class="is-current" href="./projetos.html">Projetos</a>
+        <a href="./como-funciona.html">Como funciona</a>
+        <a href="./comunidade.html">Comunidade</a>
+        <a href="./contato.html">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero-page">
+        <div class="section-heading">
+          <p class="eyebrow">Projetos e chamadas</p>
+          <h1>Uma vitrine pública para projetos de extensão com leitura rápida e filtro útil.</h1>
+          <p class="hero-text">
+            A lógica aqui vem da área de desafios do InnoCentive, mas substitui prêmios e crowd
+            científico por projetos de extensão com território, parceiros, equipe desejada e status
+            de execução.
+          </p>
+        </div>
+      </section>
+
+      <section class="explore-layout">
+        <aside class="filter-card">
+          <h2>Filtrar oportunidades</h2>
+          <p class="form-note">Busque por área, universidade, território ou formato de atuação.</p>
+
+          <div class="search-stack">
+            <div class="form-field">
+              <label for="busca">Buscar</label>
+              <input
+                id="busca"
+                type="search"
+                placeholder="Ex.: saúde, escola, UFPE, comunidade"
+                data-search-input
+              >
+            </div>
+
+            <div class="form-field">
+              <label for="categoria">Área temática</label>
+              <select id="categoria" data-category-filter>
+                <option value="todos">Todas</option>
+                <option value="saude">Saúde</option>
+                <option value="educacao">Educação</option>
+                <option value="cidades">Cidades</option>
+                <option value="cultura">Cultura</option>
+                <option value="agro">Agro</option>
+                <option value="tecnologia">Tecnologia social</option>
+              </select>
+            </div>
+          </div>
+        </aside>
+
+        <section class="project-grid">
+          <article
+            class="project-card"
+            data-project-card
+            data-category="saude"
+            data-search="saude preventiva ufba salvador periferia clinica itinerante comunidade"
+          >
+            <div class="project-art art-health"></div>
+            <div class="project-body">
+              <div class="card-headline">
+                <p class="challenge-tag">Saúde</p>
+                <span class="status-chip">Montando equipe</span>
+              </div>
+              <h3>Clínica itinerante de saúde preventiva</h3>
+              <p>
+                Projeto entre universidade e rede pública para educação em saúde, triagem e
+                acompanhamento territorial em bairros periféricos.
+              </p>
+              <div class="project-meta">
+                <div>
+                  <span>Universidade</span>
+                  <strong>UFBA</strong>
+                </div>
+                <div>
+                  <span>Formato</span>
+                  <strong>Presencial</strong>
+                </div>
+                <div>
+                  <span>Duração</span>
+                  <strong>6 meses</strong>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="project-card"
+            data-project-card
+            data-category="educacao"
+            data-search="educacao reforco escolar ufrn natal escola publica oficinas letramento"
+          >
+            <div class="project-art art-education"></div>
+            <div class="project-body">
+              <div class="card-headline">
+                <p class="challenge-tag">Educação</p>
+                <span class="status-chip">Inscrições abertas</span>
+              </div>
+              <h3>Laboratório de reforço escolar e letramento</h3>
+              <p>
+                Ação extensionista com escolas públicas para reforço, produção de materiais e
+                oficinas com estudantes de licenciatura e pedagogia.
+              </p>
+              <div class="project-meta">
+                <div>
+                  <span>Universidade</span>
+                  <strong>UFRN</strong>
+                </div>
+                <div>
+                  <span>Formato</span>
+                  <strong>Híbrido</strong>
+                </div>
+                <div>
+                  <span>Duração</span>
+                  <strong>4 meses</strong>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="project-card"
+            data-project-card
+            data-category="cidades"
+            data-search="cidades mobilidade ufpr curitiba bairro dados seguranca urbana mapeamento"
+          >
+            <div class="project-art art-city"></div>
+            <div class="project-body">
+              <div class="card-headline">
+                <p class="challenge-tag">Cidades</p>
+                <span class="status-chip">Buscando parceiros</span>
+              </div>
+              <h3>Mapa de mobilidade e segurança no entorno universitário</h3>
+              <p>
+                Levantamento territorial com estudantes, moradores e prefeitura para gerar dados e
+                intervenções de baixo custo em rotas críticas.
+              </p>
+              <div class="project-meta">
+                <div>
+                  <span>Universidade</span>
+                  <strong>UFPR</strong>
+                </div>
+                <div>
+                  <span>Formato</span>
+                  <strong>Presencial</strong>
+                </div>
+                <div>
+                  <span>Duração</span>
+                  <strong>5 meses</strong>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="project-card"
+            data-project-card
+            data-category="cultura"
+            data-search="cultura memoria ufpa belem acervo oral periferia audiovisual patrimonio"
+          >
+            <div class="project-art art-culture"></div>
+            <div class="project-body">
+              <div class="card-headline">
+                <p class="challenge-tag">Cultura</p>
+                <span class="status-chip">Chamando bolsistas</span>
+              </div>
+              <h3>Memória oral e acervo audiovisual comunitário</h3>
+              <p>
+                Projeto para registrar histórias locais, organizar acervo e formar jovens em
+                documentação, audiovisual e preservação de memória.
+              </p>
+              <div class="project-meta">
+                <div>
+                  <span>Universidade</span>
+                  <strong>UFPA</strong>
+                </div>
+                <div>
+                  <span>Formato</span>
+                  <strong>Híbrido</strong>
+                </div>
+                <div>
+                  <span>Duração</span>
+                  <strong>8 meses</strong>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="project-card"
+            data-project-card
+            data-category="agro"
+            data-search="agro ufl a assistencia tecnica agricultura familiar cooperativas rastreabilidade"
+          >
+            <div class="project-art art-agro"></div>
+            <div class="project-body">
+              <div class="card-headline">
+                <p class="challenge-tag">Agro</p>
+                <span class="status-chip">Em articulação</span>
+              </div>
+              <h3>Assistência técnica para cadeias curtas e cooperativas</h3>
+              <p>
+                Frente de extensão com produtores locais para gestão, escoamento, rastreabilidade e
+                melhoria de processos em cadeias de agricultura familiar.
+              </p>
+              <div class="project-meta">
+                <div>
+                  <span>Universidade</span>
+                  <strong>UFLA</strong>
+                </div>
+                <div>
+                  <span>Formato</span>
+                  <strong>Presencial</strong>
+                </div>
+                <div>
+                  <span>Duração</span>
+                  <strong>7 meses</strong>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="project-card"
+            data-project-card
+            data-category="tecnologia"
+            data-search="tecnologia social ufpe recife dados digitais observatorio empregabilidade juventude"
+          >
+            <div class="project-art art-tech"></div>
+            <div class="project-body">
+              <div class="card-headline">
+                <p class="challenge-tag">Tecnologia social</p>
+                <span class="status-chip">Recebendo propostas</span>
+              </div>
+              <h3>Observatório digital de empregabilidade juvenil</h3>
+              <p>
+                Iniciativa para mapear barreiras, organizar dados e criar ferramentas de apoio a
+                jovens de periferia em transição escola-trabalho.
+              </p>
+              <div class="project-meta">
+                <div>
+                  <span>Universidade</span>
+                  <strong>UFPE</strong>
+                </div>
+                <div>
+                  <span>Formato</span>
+                  <strong>Híbrido</strong>
+                </div>
+                <div>
+                  <span>Duração</span>
+                  <strong>6 meses</strong>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Extensão • Vitrine pública de projetos de extensão universitária</p>
+      <small>© <span data-current-year></span> Extensão. Conteúdo demonstrativo.</small>
+    </footer>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

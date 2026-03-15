@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Extensão</title>
+  <meta
+    name="description"
+    content="Página demonstrativa para universidades, parceiros e interessados falarem com a equipe da Extensão."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="site-frame">
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="Página inicial da Extensão">
+        <span class="brand-mark">Ex</span>
+        <span class="brand-copy">
+          <strong>Extensão</strong>
+          <small>marketplace de projetos universitários</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a href="./index.html">Início</a>
+        <a href="./projetos.html">Projetos</a>
+        <a href="./como-funciona.html">Como funciona</a>
+        <a href="./comunidade.html">Comunidade</a>
+        <a class="is-current" href="./contato.html">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero-page">
+        <div class="section-heading">
+          <p class="eyebrow">Contato</p>
+          <h1>Uma porta de entrada para universidades, parceiros de território e equipes interessadas.</h1>
+          <p class="hero-text">
+            Nesta POC o objetivo do contato é qualificar demanda: entender quem quer lançar
+            projeto, quem quer participar e quem quer entrar como parceiro de campo.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-layout">
+        <article class="form-card">
+          <h2>Quero falar com a equipe da Extensão</h2>
+          <p>Formulário demonstrativo para reuniões, apresentações e validação de interesse.</p>
+
+          <form>
+            <div class="inline-grid">
+              <div class="form-field">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" placeholder="Seu nome">
+              </div>
+              <div class="form-field">
+                <label for="instituicao">Instituição</label>
+                <input id="instituicao" type="text" placeholder="Universidade, ONG, empresa, prefeitura">
+              </div>
+            </div>
+
+            <div class="inline-grid">
+              <div class="form-field">
+                <label for="perfil">Perfil</label>
+                <select id="perfil">
+                  <option>Coordenação universitária</option>
+                  <option>Docente ou laboratório</option>
+                  <option>Estudante ou bolsista</option>
+                  <option>Parceiro externo</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="interesse">Objetivo</label>
+                <select id="interesse">
+                  <option>Quero publicar projetos</option>
+                  <option>Quero participar de projetos</option>
+                  <option>Quero oferecer campo de atuação</option>
+                  <option>Quero apoiar financeiramente</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="mensagem">Contexto</label>
+              <textarea id="mensagem" rows="6" placeholder="Descreva a demanda, o território, a área temática ou o tipo de parceria que faz sentido."></textarea>
+            </div>
+
+            <a class="btn btn-primary" href="./index.html">Enviar interesse</a>
+          </form>
+        </article>
+
+        <aside class="info-stack">
+          <article class="info-card">
+            <h2>Universidades</h2>
+            <p>Use a plataforma para organizar portfólio de extensão, abrir chamadas e ganhar clareza institucional.</p>
+          </article>
+          <article class="info-card">
+            <h2>Parceiros de território</h2>
+            <p>Municípios, escolas, coletivos, clínicas e organizações podem entrar com demanda e campo de aplicação.</p>
+          </article>
+          <article class="info-card">
+            <h2>Equipe interessada</h2>
+            <p>Estudantes, docentes e técnicos podem descobrir oportunidades alinhadas com área e disponibilidade.</p>
+          </article>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Extensão • Página demonstrativa de contato e qualificação</p>
+      <small>© <span data-current-year></span> Extensão. Conteúdo demonstrativo.</small>
+    </footer>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
