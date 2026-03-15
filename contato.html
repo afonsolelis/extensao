@@ -6,8 +6,9 @@
   <title>Contato | Extensão</title>
   <meta
     name="description"
-    content="Página demonstrativa para universidades, parceiros e interessados falarem com a equipe da Extensão."
+    content="Fale com a equipe da Extensão para lançar projetos, propor parcerias ou tirar dúvidas."
   >
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
@@ -16,11 +17,11 @@
 <body>
   <div class="site-frame">
     <header class="site-header">
-      <a class="brand" href="./index.html" aria-label="Página inicial da Extensão">
+      <a class="brand" href="./index.html" aria-label="Página inicial">
         <span class="brand-mark">Ex</span>
         <span class="brand-copy">
           <strong>Extensão</strong>
-          <small>marketplace de projetos universitários</small>
+          <small>Projetos Universitários</small>
         </span>
       </a>
 
@@ -36,82 +37,82 @@
     <main>
       <section class="hero hero-page">
         <div class="section-heading">
-          <p class="eyebrow">Contato</p>
-          <h1>Uma porta de entrada para universidades, parceiros de território e equipes interessadas.</h1>
+          <span class="eyebrow">Contato</span>
+          <h1>Abra uma conversa com nossa rede.</h1>
           <p class="hero-text">
-            Nesta POC o objetivo do contato é qualificar demanda: entender quem quer lançar
-            projeto, quem quer participar e quem quer entrar como parceiro de campo.
+            Estamos prontos para entender sua demanda, seja você de uma universidade, 
+            empresa ou organização social.
           </p>
         </div>
       </section>
 
       <section class="contact-layout">
         <article class="form-card">
-          <h2>Quero falar com a equipe da Extensão</h2>
-          <p>Formulário demonstrativo para reuniões, apresentações e validação de interesse.</p>
+          <h2>Manifestar interesse</h2>
+          <p class="form-note">Preencha os campos abaixo para qualificar sua demanda.</p>
 
-          <form>
+          <form action="#" method="POST">
             <div class="inline-grid">
               <div class="form-field">
-                <label for="nome">Nome</label>
-                <input id="nome" type="text" placeholder="Seu nome">
+                <label for="nome">Nome completo</label>
+                <input id="nome" type="text" placeholder="Como devemos te chamar?">
               </div>
               <div class="form-field">
                 <label for="instituicao">Instituição</label>
-                <input id="instituicao" type="text" placeholder="Universidade, ONG, empresa, prefeitura">
+                <input id="instituicao" type="text" placeholder="Universidade, ONG ou Empresa">
               </div>
             </div>
 
             <div class="inline-grid">
               <div class="form-field">
-                <label for="perfil">Perfil</label>
+                <label for="perfil">Seu perfil</label>
                 <select id="perfil">
-                  <option>Coordenação universitária</option>
-                  <option>Docente ou laboratório</option>
-                  <option>Estudante ou bolsista</option>
-                  <option>Parceiro externo</option>
+                  <option>Coordenação Acadêmica</option>
+                  <option>Docente ou Pesquisador</option>
+                  <option>Estudante / Bolsista</option>
+                  <option>Parceiro Externo / Comunidade</option>
                 </select>
               </div>
               <div class="form-field">
-                <label for="interesse">Objetivo</label>
-                <select id="interesse">
+                <label for="objetivo">Objetivo</label>
+                <select id="objetivo">
                   <option>Quero publicar projetos</option>
                   <option>Quero participar de projetos</option>
                   <option>Quero oferecer campo de atuação</option>
-                  <option>Quero apoiar financeiramente</option>
+                  <option>Quero apoiar a iniciativa</option>
                 </select>
               </div>
             </div>
 
             <div class="form-field">
-              <label for="mensagem">Contexto</label>
-              <textarea id="mensagem" rows="6" placeholder="Descreva a demanda, o território, a área temática ou o tipo de parceria que faz sentido."></textarea>
+              <label for="mensagem">Contexto e Demanda</label>
+              <textarea id="mensagem" rows="6" placeholder="Descreva brevemente o projeto, território ou área temática de interesse."></textarea>
             </div>
 
-            <a class="btn btn-primary" href="./index.html">Enviar interesse</a>
+            <button type="button" class="btn btn-primary" onclick="alert('Obrigado pelo interesse! Esta é uma demonstração.')">Enviar Manifestação</button>
           </form>
         </article>
 
         <aside class="info-stack">
           <article class="info-card">
-            <h2>Universidades</h2>
-            <p>Use a plataforma para organizar portfólio de extensão, abrir chamadas e ganhar clareza institucional.</p>
+            <h3>Para Universidades</h3>
+            <p>Organize o portfólio de extensão do seu campus e dê visibilidade aos seus docentes.</p>
           </article>
           <article class="info-card">
-            <h2>Parceiros de território</h2>
-            <p>Municípios, escolas, coletivos, clínicas e organizações podem entrar com demanda e campo de aplicação.</p>
+            <h3>Para o Território</h3>
+            <p>Municípios e coletivos podem apresentar problemas reais que precisam de apoio acadêmico.</p>
           </article>
           <article class="info-card">
-            <h2>Equipe interessada</h2>
-            <p>Estudantes, docentes e técnicos podem descobrir oportunidades alinhadas com área e disponibilidade.</p>
+            <h3>Dúvidas Rápidas</h3>
+            <p>Precisa de ajuda para estruturar uma chamada? Nossa equipe pode orientar o processo.</p>
           </article>
         </aside>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Extensão • Página demonstrativa de contato e qualificação</p>
-      <small>© <span data-current-year></span> Extensão. Conteúdo demonstrativo.</small>
+      <p>Extensão • Marketplace de Projetos Universitários</p>
+      <small>© <span data-current-year></span> Extensão. Todos os direitos reservados.</small>
     </footer>
   </div>
 
