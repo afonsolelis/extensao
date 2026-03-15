@@ -733,6 +733,17 @@ input:focus, select:focus, textarea:focus {
   }
 }
 
+.hero-page .section-heading {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 840px; /* Slightly wider for better balance */
+}
+
+.hero-page .hero-text {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Responsiveness */
 @media (max-width: 1024px) {
   .hero, .split-layout, .explore-layout {
