@@ -564,6 +564,10 @@ input, select, textarea {
   transition: all 0.2s ease;
 }
 
+form .btn {
+  margin-top: 24px;
+}
+
 input:focus, select:focus, textarea:focus {
   outline: none;
   border-color: var(--brand);
