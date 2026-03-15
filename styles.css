@@ -472,7 +472,7 @@ h1 {
 .cta-section {
   background: var(--primary);
   color: white;
-  padding: 64px;
+  padding: 48px 64px;
   border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
@@ -488,6 +488,10 @@ h1 {
 
 .cta-section .eyebrow {
   color: var(--brand);
+}
+
+.cta-section .hero-actions {
+  margin-top: 0;
 }
 
 /* Footer */
